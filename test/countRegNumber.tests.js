@@ -1,7 +1,11 @@
 describe('Test My countRegNumber Function' , function(){
-    it("should return the number of registration numbers in the string" , function(){
+    it("should return 3 if 'CA 182736,CY 523519,CJ 812328' is passed" , function(){
         assert.equal(3,countRegNumber('CA 182736,CY 523519,CJ 812328'));
+    });
+    it("should return 1 if 'CA 182736' is passed" , function(){
         assert.equal(1,countRegNumber('CA 182736'));
-        assert.equal(5,countRegNumber('CA 182736,CY 523519,CJ 812328,DC 55 YU GP,ERT 123 EC'));
+    });
+    it("should return 0 if it is an empty string" , function(){
+        assert.equal(0,countRegNumber(''));
     });
 });

@@ -1,3 +1,6 @@
 function countRegNumber(regNumbers){
-    return regNumbers.split(',').length;
-   };
+    if(regNumbers === '' || regNumbers === ' '){
+      return 0;
+    }
+   return regNumbers.split(',').length;
+  };

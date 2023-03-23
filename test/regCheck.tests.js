@@ -1,14 +1,26 @@
 describe('Test My regCheck Function' , function(){
-  it("should return true if a registration number is for GP, L, EC, MP registration plates." , function(){
+  it("should return true if ('DC 55 YU GP', 'GP') is passed" , function(){
       assert.equal(true,regCheck('DC 55 YU GP', 'GP'));
-      assert.equal(true,regCheck('5566 L', 'L'));
-      assert.equal(true,regCheck('ERT 123 EC', 'EC'));
-      assert.equal(true,regCheck('FGT 123 MP', 'MP'));
   });
-  it("should return false if a registration number is not for GP, L, EC, MP registration plates." , function(){
+  it("should return true if ('5566 L', 'L') is passed" , function(){
+    assert.equal(true,regCheck('5566 L', 'L'));
+  });
+  it("should return true if ('ERT 123 EC', 'EC') is passed" , function(){
+    assert.equal(true,regCheck('ERT 123 EC', 'EC'));
+  });
+  it("should return true if ('FGT 123 MP', 'MP') is passed." , function(){
+    assert.equal(true,regCheck('FGT 123 MP', 'MP'));
+  });
+  it("should return false if ('DC 55 YU GP', 'EC') is passed" , function(){
       assert.equal(false,regCheck('DC 55 YU GP', 'EC'));
-      assert.equal(false,regCheck('5566 L', 'M'));
-      assert.equal(false,regCheck('ERT 123 EC', 'GP'));
-      assert.equal(false,regCheck('FGT 123 MM', 'MP'));
+  });
+  it("should return false if ('5566 L', 'M') is passed" , function(){
+    assert.equal(false,regCheck('5566 L', 'M'));
+  });
+  it("should return false if ('ERT 123 EC', 'GP') is passed" , function(){
+    assert.equal(false,regCheck('ERT 123 EC', 'GP'));
+  });
+  it("should return false if ('FGT 123 MM', 'MP') is passed" , function(){
+    assert.equal(false,regCheck('FGT 123 MM', 'MP'));
   });
 });
