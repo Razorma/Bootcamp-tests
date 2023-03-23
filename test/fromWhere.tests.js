@@ -8,7 +8,7 @@ describe('Test My fromWhere Function' , function(){
     it("should return Cape Town if the registration number is from Cape Town" , function(){
         assert.equal(fromWhere('CA 987504'), 'Cape Town');
     });
-    it("should return Some other place! if the registration number is not from Bellville, Paarl or Cape Town" , function(){
+    it("should return Some other place! if the registration number is not from Bellville, Paarl, or Cape Town" , function(){
         assert.equal(fromWhere('ZN 568593'), 'Some other place!');
     });
 });

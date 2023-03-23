@@ -5,7 +5,7 @@ describe('Test My isFromBellville Function' , function(){
     it("should return false if a registration number is not for Bellville" , function(){
         assert.equal(false,isFromBellville('CJ 123'));
     });
-    it("should return false if it is an empty string" , function(){
+    it("should return false if an empty string is passed" , function(){
         assert.equal(false,isFromBellville(''));
     });
 });

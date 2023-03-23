@@ -40,7 +40,7 @@ describe('Test My findItemsOver20 Function' , function(){
     it("The function should return an empty array if there is no item over 20" , function(){
         assert.deepEqual(results2, findItemsOver20(itemList2, 20));
     });
-    it("The function should return an empty array if there is no item over 20" , function(){
+    it("The function should return all the products if they are over over 20" , function(){
         assert.deepEqual(results3, findItemsOver20(itemList3, 20));
     });
 });

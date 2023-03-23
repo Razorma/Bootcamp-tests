@@ -20,7 +20,7 @@ describe('Test My regCheck Function' , function(){
   it("should return false if ('ERT 123 EC', 'GP') is passed" , function(){
     assert.equal(false,regCheck('ERT 123 EC', 'GP'));
   });
-  it("should return false if ('FGT 123 MM', 'MP') is passed" , function(){
+  it("should return false if the string ('FGT 123 MM', 'MP') is passed" , function(){
     assert.equal(false,regCheck('FGT 123 MM', 'MP'));
   });
 });

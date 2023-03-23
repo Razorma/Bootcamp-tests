@@ -42,7 +42,7 @@ describe('Test My findItemsOver Function' , function(){
     it("The function an empty array if products that have quantity higher than 25" , function(){
         assert.deepEqual(results3, findItemsOver(itemList3, 25));
     });
-    it("The function an empty array if products that have quantity 20" , function(){
+    it("The function an empty array if products that have quantity 20 are not found" , function(){
         assert.deepEqual(results2, findItemsOver(itemList2, 20));
     });
 });

@@ -8,7 +8,7 @@ describe('Test My countRegNumber Function' , function(){
     it("should return 2 if 'CA 182736, CJ 812328' is passed" , function(){
         assert.equal(2,countRegNumber('CA 182736, CJ 812328'));
     });
-    it("should return 0 if it is an empty string" , function(){
+    it("should return 0 an empty string is passed" , function(){
         assert.equal(0,countRegNumber(''));
     });
 });

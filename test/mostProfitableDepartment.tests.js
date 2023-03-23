@@ -84,7 +84,7 @@ describe('Test My mostProfitableDepartment Function' , function(){
     it("The function should return 'electronics' for dataset 3 as the Most profitable department" , function(){
         assert.equal('carpentry', mostProfitableDepartment(salesData3), "Most profitable department is 'carpentry' for dataset 3");
     });
-    it("The function should return 'hardware' for dataset 4 as the Most profitable department" , function(){
+    it("The function should return 'hardware' for dataset number 4 as the Most profitable department" , function(){
         assert.equal('hardware', mostProfitableDepartment(salesData4), "Most profitable department is 'hardware' for dataset 4");
     });
 });

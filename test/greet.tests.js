@@ -8,7 +8,7 @@ describe('Test My greet Function' , function(){
     it("should return 'Hello, Bheka' when passed with Bheka " , function(){
         assert.equal("Hello, Bheka",greet('Bheka'));
     });
-    it("should return 'Hello, Creep' when passed with Creep ", function(){
+    it("should return 'Hello, Creep' when passed with the name  Creep ", function(){
         assert.equal("Hello, Creep",greet('Creep'));
     });
 });

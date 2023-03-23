@@ -5,7 +5,7 @@ describe('Test My countAllPaarl function', function(){
     it('Should return 0 if there are no registration numbers from parl' ,function() {
         assert.equal(0,countAllPaarl('CF 345 123, CF 2345, CL 123-546, CK 345, CF 123'))
     });
-    it('Should return 0 if it is an empty string' ,function() {
+    it('Should return 0 an empty string is passed' ,function() {
         assert.equal(0,countAllPaarl('CF 345 123, CF 2345, CL 123-546, CK 345, CF 123'))
     });
 });
